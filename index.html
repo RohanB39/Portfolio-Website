@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Rohan Bankar &mdash; Portfolio Website</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    .skills-container {
+        position: relative;
+        width: 120%;
+        height: 500px;
+        padding: 20px;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-left: -10%;
+    }
+
+    #skillsChart {
+        width: 120% !important;
+        height: 100% !important;
+    }
+
+
+    /* dd */
+.dd-box {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dd-box-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dd-box-header {
+    background-color: #f7f7f7;
+  }
+  
+  .dd-box-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .icon {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .dd-box-item.active .icon {
+    transform: rotate(45deg);
+  }
+  
+  .dd-box-content {
+    padding: 0 20px;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .dd-box-item.active .dd-box-content {
+    max-height: 500px;
+    transition: max-height 0.3s ease-in;
+  }
+
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="site-wrap">
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- Upper Navbar Start -->
+    <div class="top-bar py-2" id="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-lg-right order-lg-2">
+            <ul class="social-media m-0 p-0">
+              <li><a href="#" class="p-2"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://x.com/RohanBa97287452" class="p-2"><span class="icon-twitter"></span></a></li>
+              <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
+              <li><a href="#" class="p-2"><span class="icon-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-center text-lg-left order-lg-1">
+            <p class="mb-0 d-inline-flex">
+              <span class="mr-3"><a href="tel://#" class="d-flex align-items-center"><span
+                    class="icon-phone mr-2"></span><span>+91 7028494950</span></a></span>
+              <span><a href="tel://#" class="d-flex align-items-center"><span
+                    class="icon-envelope mr-2"></span><span>bankarrohan39@gmail.com</span></a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Upper Navbar Start -->
+
+    <!-- Main NAvbar Start  -->
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">RohanB.<span class="text-primary">.</span> </a>
+            </h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#work-section" class="nav-link">About</a></li>
+                <li>
+                  <a href="#services-section" class="nav-link">Portfolio</a>
+                </li>
+                <li class="has-children">
+                  <a href="#about-section" class="nav-link">Skills</a>
+                  <ul class="dropdown">
+                    <li><a href="#about-section">Specialties</a></li>
+                    <li><a href="#team-section">Why Me</a></li>
+                  </ul>
+                </li>
+                <li><a href="#blog-section" class="nav-link">Resume</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
+              class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+        </div>
+      </div>
+    </header>
+    <!-- Main NAvbar End  -->
+
+    <!-- Home Page start -->
+    <div class="particlehead"></div>
+    <div class="site-blocks-cover">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+
+          <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="row justify-content-center mb-4">
+              <div class="col-md-10 text-center">
+                <h1>I Love To Build <span class="typed-words"></span></h1>
+                <p class="lead mb-5">HI, MY NAME IS BANKAR ROHAN SUNIL</p>
+                <div><a href="viewProjects.html" class="btn btn-primary btn-md">View My Projects</a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Home Page end -->
+
+
+    <!-- Tech Logos Section -->
+    <section class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col" data-aos="fade-in" data-aos-delay="0">
+            <img src="images/code.svg" alt="Image" class="img-fluid" style="width: 50%;">
+          </div>
+          <div class="col" data-aos="fade-in" data-aos-delay="100">
+            <img src="images/java.svg" alt="Image" class="img-fluid" style="width: 50%;">
+          </div>
+          <div class="col" data-aos="fade-in" data-aos-delay="200">
+            <img src="images/spring.svg" alt="Image" class="img-fluid" style="width: 50%;">
+          </div>
+          <div class="col" data-aos="fade-in" data-aos-delay="300">
+            <img src="images/javascript.svg" alt="Image" class="img-fluid" style="width: 50%;">
+          </div>
+          <div class="col" data-aos="fade-in" data-aos-delay="400">
+            <img src="images/react.svg" alt="Image" class="img-fluid" style="width: 50%;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Education Section Start -->
+    <section class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-lg-0 mb-4">
+            <div class="box-with-humber bg-white p-5">
+              <span class="icon icon-laptop2 mr-2 text-primary h3 mb-3 d-block"></span>
+              <h2 class="text-primary">B - Tech</h2>
+              <p class="mb-4">Switching from B.Tech Mechanical to IT involves adapting from engineering principles to IT
+                concepts, learning new technologies, and coding skills.</p>
+              <ul class="list-unstyled ul-check primary">
+                <li>College : Yashoda Technical Campus, Satara</li>
+                <li>Mechanical Engineering</li>
+                <li>7.20 CGPA</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-lg-0 mb-4" data-jarallax-element="-50">
+            <div class="box-with-humber bg-white p-5">
+              <span class="icon icon-laptop2 mr-2 text-primary h3 mb-3 d-block"></span>
+
+              <h2 class="text-primary">HSC</h2>
+              <p class="mb-4">In 12th grade science, I'll delve deeper into physics, chemistry, and biology,
+                strengthening your foundation for higher education and future careers.</p>
+              <ul class="list-unstyled ul-check primary">
+                <li>College : Mudhoji High School, Phaltan</li>
+                <li>Science</li>
+                <li>60.80%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-lg-0 mb-4" data-jarallax-element="20">
+            <div class="box-with-humber bg-white p-5">
+              <span class="icon icon-laptop2 mr-2 text-primary h3 mb-3 d-block"></span>
+
+              <h2 class="text-primary">SSC</h2>
+              <p class="mb-4">In 12th grade science, I'll delve deeper into physics, chemistry, and biology,
+                strengthening your foundation for higher education and future careers.</p>
+              <ul class="list-unstyled ul-check primary">
+                <li>College : Mudhoji High School, Phaltan</li>
+                <li>Science</li>
+                <li>68.40%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section End -->
+
+
+    <!-- About section Start -->
+    <section class="site-section" id="work-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="site-section-heading text-center">About Me</h2>
+            <p class="lead">Passionate IT professional with expertise in web development and Java frameworks, driven by
+              a commitment to building innovative and efficient solutions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section ft-feature-1">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-12 w-100 ft-feature-1-content">
+            <div class="row align-items-center">
+              <div class="col-lg-5" data-jarallax-element="50">
+
+                <img src="images/dev.png" alt="Image" class="img-fluid mb-4 mb-lg-0">
+
+              </div>
+              <div class="col-lg-3 ml-auto" data-jarallax-element="-50">
+                <div class="mb-5">
+                  <h3 class="d-flex align-items-center"><span class="icon icon-star mr-2"></span><span>Who I am</span>
+                  </h3>
+                  <p>I am Rohan Bankar from Phaltan, Satara, born on November 29, 2000. I come from a middle-class
+                    family with my father working as a farmer. I have completed my B.Tech in 2023 and am currently
+                    looking for a job. My interests include technology and coding.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 class="d-flex align-items-center"><span class="icon icon-code mr-2"></span><span>Little Bit About
+                      My Skills</span></h3>
+                  <p>I am, skilled in HTML, CSS, JavaScript, and React, with a solid foundation in Java. I have
+                    practical knowledge of Java frameworks including Spring, Hibernate, and Collections. My expertise
+                    spans both frontend and backend development, enabling me to build and manage dynamic, efficient web
+                    applications.</p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="mb-5">
+                  <h3 class="d-flex align-items-center"><span class="icon icon-lightbulb mr-2">💡</span>
+                    <span>Expertise</span>
+                  </h3>
+                  <p>I have hands-on experience in database connectivity using JDBC and Spring, where I’ve implemented
+                    and managed CRUD operations effectively. I am skilled in the DAO (Data Access Object) model, which
+                    ensures a clean separation between data access and business logic. Additionally, I have a strong
+                    understanding of the MVC (Model-View-Controller) architecture, enabling me to build scalable and
+                    maintainable web applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- my Skills section in about -->
+    <!-- <section class="site-section testimonial-wrap">
+      <div class="container mb-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="site-section-heading text-center">My Tech Skills</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slide-one-item home-slider owl-carousel">
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;I possess a robust foundation in Java, encompassing core skills such as Java basics, syntax, data types, variables, operators, control statements, and object-oriented programming (OOP) principles like classes, objects, inheritance, polymorphism, encapsulation, and abstraction. My expertise extends to exception handling, the Collections Framework (List, Set, Map, Queue), Streams and Lambda Expressions, File I/O (Input/Output), multithreading, and concurrency, as well as proficiency with Java Development Kit (JDK) tools including Javadoc, JConsole, and JVisualVM. Additionally, I am skilled in advanced Java topics like JavaFX and Swing for GUI applications, Java networking (sockets, URL handling), JDBC for database connectivity, and features introduced in Java 8 and beyond, such as the Streams API, Optional class, and the Date and Time API. My experience includes implementing design patterns like Singleton, Factory, and Observer, and utilizing frameworks and libraries such as Spring, Hibernate, Apache Maven/Gradle, and Apache Kafka. Furthermore, I am adept at developing RESTful web services and APIs and have a solid grounding in JUnit and testing methodologies.&rdquo;</p>
+            </blockquote>
+
+            <figure class="mb-4 d-block align-items-center justify-content-center">
+              <div><img src="images/java.svg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Java</p>
+            </figure>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-block align-items-center justify-content-center">
+              <div><img src="images/person_2.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Christine Aguilar</p>
+            </figure>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-block align-items-center justify-content-center">
+              <div><img src="images/person_4.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Robert Spears</p>
+            </figure>
+
+
+          </div>
+        </div>
+
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-block align-items-center justify-content-center">
+              <div><img src="images/person_5.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Bruce Rogers</p>
+            </figure>
+
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- About section End -->
+
+
+
+    <!-- my portfolio static  -->
+    <section class="site-section border-bottom" id="services-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center" data-aos="fade-up">
+            <h2 class="site-section-heading text-center">My Portfolio</h2>
+            <h2 class="site-section-heading text-center">Static Websites</h2>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <a href="images/carwale.png" class="media-1" data-fancybox="gallery">
+                <img src="images/carwale.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Carwale Clone</h2>
+                  <span class="category">Web Application</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="images/af.png" class="media-1" data-fancybox="gallery">
+                <img src="images/af.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Alive Films</h2>
+                  <span class="category">Film Website</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="images/brocode.png" class="media-1" data-fancybox="gallery">
+                <img src="images/brocode.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Bro Code</h2>
+                  <span class="category">Coding Website</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="images/clg.png" class="media-1" data-fancybox="gallery">
+                <img src="images/clg.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>College Website</h2>
+                  <span class="category">Website</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="images/shopping.png" class="media-1" data-fancybox="gallery">
+                <img src="images/shopping.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Shopping Website</h2>
+                  <span class="category">Shopping</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="images/brotomotive.png" class="media-1" data-fancybox="gallery">
+                <img src="images/brotomotive.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Car Website</h2>
+                  <span class="category">Website</span>
+                </div>
+              </a>
+            </div>
+
+
+
+            <div class="col-md-6 col-lg-4">
+              <a href="images/spotify.png" class="media-1" data-fancybox="gallery">
+                <img src="images/spotify.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Spotify Clone</h2>
+                  <span class="category">Web Application</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="images/portfolio.png" class="media-1" data-fancybox="gallery">
+                <img src="images/portfolio.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>My Portfolio Website</h2>
+                  <span class="category">Website</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="images/gym.png" class="media-1" data-fancybox="gallery">
+                <img src="images/gym.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>GYM Website</h2>
+                  <span class="category">Website</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- my portfolio dynamic  -->
+    <section class="site-section border-bottom" id="services-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center" data-aos="fade-up">
+            <h2 class="site-section-heading text-center">Dynamic Websites</h2>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <a href="images/cs.png" class="media-1" data-fancybox="gallery">
+                <img src="images/cs.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Cyber Success</h2>
+                  <span class="category">Web Application</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="images/ecart.png" class="media-1" data-fancybox="gallery">
+                <img src="images/ecart.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Shopping Cart</h2>
+                  <span class="category">Website</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="images/booking.png" class="media-1" data-fancybox="gallery">
+                <img src="images/booking.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Booking Website</h2>
+                  <span class="category">Dynamic Booking Website</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="images/train.png" class="media-1" data-fancybox="gallery">
+                <img src="images/train.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Train Booking</h2>
+                  <span class="category">Website</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="images/boarding.png" class="media-1" data-fancybox="gallery">
+                <img src="images/boarding.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Dynamic Boarding pass</h2>
+                  <span class="category">Ticket</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="images/login.png" class="media-1" data-fancybox="gallery">
+                <img src="images/login.png" alt="Image" class="img-fluid">
+                <div class="media-1-content">
+                  <h2>Dynamic Login Page</h2>
+                  <span class="category">page</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- My skills Section Start -->
+    <div class="site-section" id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+
+          <div class="col-md-5 ml-auto mb-5 order-md-2" data-jarallax-element="50">
+            <div class="skills-container">
+                <canvas id="skillsChart" class="img-fluid rounded"></canvas>
+            </div>
+        </div>
+          <div class="col-md-6 order-md-1" data-jarallax-element="-50">
+
+            <div class="row">
+
+              <div class="col-12">
+                <div class="text-left pb-1">
+                  <h2 class="site-section-heading">My Skills</h2>
+                </div>
+              </div>
+              <div class="col-12 mb-4">
+                <p class="lead">I possess a strong foundation in Java, with extensive experience in developing robust and efficient applications using both core and advanced Java features. My expertise extends to HTML, CSS, and JavaScript, allowing me to create dynamic and visually appealing web interfaces. I am proficient in SQL, with a solid understanding of database design, querying, and optimization to manage and retrieve data effectively. These skills collectively enable me to develop full-stack solutions that are both functional and aesthetically pleasing.</p>
+              </div>
+              <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
+                <div class="unit-4">
+                  <div class="unit-4-icon mr-4 mb-3"><span class="text-primary icon-phonelink"></span></div>
+                  <div class="dd-box theme-pink">
+                    <div class="dd-box-item">
+                      <div class="dd-box-header">
+                        <button class="dd-box-button">
+                          <span class="icon">+</span>
+                         JAVA
+                        </button>
+                      </div>
+                      <div class="dd-box-content">
+                        <p>
+                          ⭐ Core Java Concepts <br>
+                          ⭐ Advance Java Concepts <br>
+                          ⭐ OOPS <br>
+                          ⭐ JDBC <br>
+                          ⭐ Hibernate <br>
+                          ⭐ Spring <br>
+                          ⭐ Spring Boot
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dd-box-item">
+                      <div class="dd-box-header">
+                        <button class="dd-box-button">
+                          <span class="icon">+</span>
+                          HTML 5
+                        </button>
+                      </div>
+                      <div class="dd-box-content">
+                        <p>
+                          ⭐Writing clean, semantic HTML5 <br>
+                          ⭐Creating responsive web layouts<br>
+                          ⭐Integrating multimedia elements <br>
+                          ⭐Implementing complex layouts<br>
+                          ⭐Ensuring accessibility and SEO <br>
+                          ⭐Utilizing forms for data input <br>
+                          ⭐Manipulating the DOM <br>
+                          ⭐Adding custom data attributes <br>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dd-box theme-pink">
+                    <!-- <div class="dd-box-item">
+                      <div class="dd-box-header">
+                        <button class="dd-box-button">
+                          <span class="icon">+</span>
+                          CSS 3
+                        </button>
+                      </div>
+                      <div class="dd-box-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+                          risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+                          nec, ultricies sed, dolor.
+                        </p>
+                      </div>
+                    </div> -->
+                    <div class="dd-box-item">
+                      <div class="dd-box-header">
+                        <button class="dd-box-button">
+                          <span class="icon">+</span>
+                          SQL
+                        </button>
+                      </div>
+                      <div class="dd-box-content">
+                        <p>
+                          ⭐ Writing efficient SQL queries <br>
+                          ⭐ Designing and managing databases <br>
+                          ⭐ Normalizing and optimizing schemas <br>
+                          ⭐ Performing CRUD operations <br>
+                          ⭐ Using joins and subqueries <br>
+                          ⭐ Implementing indexing strategies <br>
+                          ⭐ Working with SQL-based databases (MySQL, PostgreSQL) <br>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
+                <div class="unit-4">
+                  <div class="unit-4-icon mr-4 mb-3"><span class="text-primary icon-extension"></span></div>
+                  <div class="dd-box theme-pink">
+                    <div class="dd-box-item">
+                      <div class="dd-box-header">
+                        <button class="dd-box-button">
+                          <span class="icon">+</span>
+                          JavaScript
+                        </button>
+                      </div>
+                      <div class="dd-box-content">
+                        <p>
+                          ⭐ Writing clean, efficient JavaScript <br>
+                          ⭐ Understanding ES6+ features <br>
+                          ⭐ Manipulating the DOM <br>
+                          ⭐ Handling events and user interactions <br>
+                          ⭐ Using AJAX and Fetch API <br>
+                          ⭐ Implementing asynchronous programming <br>
+                          ⭐ Working with frameworks (React) <br>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dd-box-item">
+                      <div class="dd-box-header">
+                        <button class="dd-box-button">
+                          <span class="icon">+</span>
+                          CSS 3
+                        </button>
+                      </div>
+                      <div class="dd-box-content">
+                        <p>
+                          ⭐ Writing clean, modular CSS <br>
+                          ⭐ Creating responsive designs <br>
+                          ⭐ Using Flexbox and Grid <br>
+                          ⭐ Implementing animations and transitions <br>
+                          ⭐ Ensuring cross-browser compatibility <br>
+                          ⭐ Styling forms and buttons <br>
+                          ⭐ Applying CSS preprocessors (Sass) <br>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- My skills Section end -->
+
+
+    <!-- In my skills why me section -->
+    <div class="site-section border-bottom" id="team-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center">
+            <h2 class="site-section-heading">Why Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <div class="person text-center bg-white p-4">
+              <img src="images/java.svg" alt="Image" class="img-fluid rounded-circle mb-3">
+              <h3>Java</h3>
+              <p class="position text-muted">2021 - Till Now</p>
+              <p class="mb-4">I am proficient in JVM architecture, core Java concepts, and object-oriented programming (OOP). My expertise includes I/O operations, exception handling, multithreading, and file handling. I am skilled in working with collections and JDBC for database connectivity. Additionally, I have experience with DAO, MVC pattern, Java annotations, and managing JAR and XML files. My proficiency extends to Hibernate, JPA, JSP, JSTL, and frameworks like Spring, Spring Boot, and Spring MVC, enabling me to develop robust and scalable applications.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+            <div class="person text-center bg-white p-4">
+              <img src="images/javascript.svg" alt="Image" class="img-fluid rounded-circle mb-3">
+              <h3>JavaScript</h3>
+              <p class="position text-muted">2023 - Till Now</p>
+              <p class="mb-4">I am proficient in writing clean, efficient JavaScript and have a strong grasp of ES6+ features. My expertise includes DOM manipulation, event handling, and asynchronous programming with AJAX and Fetch API. I am skilled in using frameworks and libraries such as React, Angular, and jQuery. Additionally, I have experience with debugging and testing JavaScript code, creating and consuming APIs, and implementing complex user interactions to build dynamic web applications.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <div class="person text-center bg-white p-4">
+              <img src="images/sql.png" alt="Image" class="img-fluid rounded-circle mb-3">
+              <h3>SQL</h3>
+              <p class="position text-muted">2022 - Till Now</p>
+              <p class="mb-4">I am proficient in writing efficient SQL queries and managing databases. My expertise includes designing and normalizing database schemas, performing CRUD operations, and using joins and subqueries for complex data retrieval. I am skilled in implementing indexing strategies, ensuring data integrity and security, and handling stored procedures and triggers. Additionally, I have experience with data analysis, working with SQL-based databases like MySQL and PostgreSQL, and optimizing database performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Resume Section -->
+    <section class="site-section" id="blog-section">
+      <div class="container">
+          <div class="row justify-content-center mb-5">
+              <div class="col-md-8 text-center">
+                  <h2 class="site-section-heading text-center">My Resume</h2>
+                  <!-- Resume Button -->
+                  <a href="images/resume/RohanBankar.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                      View Resume
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+
+    <!-- Contact Me Section Start -->
+    <section class="site-section" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="site-section-heading">Contact Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-5">
+
+
+
+            <form action="#" class="p-5 bg-white">
+
+              <h2 class="h4 mb-5">Contact Form</h2>
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">First Name</label>
+                  <input type="text" id="fname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label>
+                  <input type="email" id="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Subject</label>
+                  <input type="subject" id="subject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Message</label>
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control"
+                    placeholder="Write your notes or questions here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Contact Me Section end -->
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="footer-heading mb-4">About Me</h2>
+                <p>I am passionate about continuous learning and staying updated with the latest industry trends to deliver innovative solutions. My approach to problem-solving and development is driven by a commitment to writing clean, maintainable code and delivering high-quality results.</p>
+              </div>
+              <div class="col-md-3 ml-auto">
+                <h2 class="footer-heading mb-4">Features</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h2 class="footer-heading mb-4">Follow Me On</h2>
+                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with
+                love by Rohan Bankar.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jarallax.min.js"></script>
+  <script src="js/jarallax-element.min.js"></script>
+  <script src="js/lozad.min.js"></script>
+  <script src="js/modernizr.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/OBJLoader.js"></script>
+  <script src="js/ParticleHead.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/typed.js"></script>
+  <script>
+    var typed = new Typed('.typed-words', {
+      strings: ["Web Apps", " Dynamic Websites", " Mobile Apps"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 3000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var ctx = document.getElementById('skillsChart').getContext('2d');
+        var skillsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Java', 'HTML', 'CSS', 'JavaScript', 'React', 'Spring', 'Spring Boot'],
+                datasets: [{
+                    label: 'Skill Levels',
+                    data: [80, 80, 80, 60, 60, 80, 80],
+                    backgroundColor: [
+                        // 'rgba(255, 99, 132, 0.2)',
+                        // 'rgba(54, 162, 235, 0.2)',
+                        // 'rgba(255, 206, 86, 0.2)',
+                        // 'rgba(75, 192, 192, 0.2)',
+                        // 'rgba(153, 102, 255, 0.2)',
+                        // 'rgba(255, 159, 64, 0.2)',
+                        // 'rgba(255, 99, 132, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1,
+                    borderRadius: 5,
+                }]
+            },
+            options: {
+                animation: {
+                    duration: 2000,
+                    easing: 'easeInOutBounce'
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: {
+                            display: false
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.raw + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+
+  </script>
+
+  <script src="js/main.js"></script>
+  <script src="js/dropDown.js"></script>
+
+
+
+</body>
+
+</html>
